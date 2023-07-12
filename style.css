@@ -46,27 +46,25 @@ h2 {
 }
 
 .button {
-  background-image: url(./img/close-icon.svg);
-  width: 13px;
-  height: 13px;
-  background-color: white;
+  background: none;
   border: none;
-  top: calc(50% - (50% - 16px));
+  top: calc(50% - (50% - 12px));
   right: 13px;
   cursor: pointer;
   position: absolute;
 }
 
-.high_list_task {
+.task {
   display: flex;
   align-items: flex-start;
-}
-
-.high_list_task {
   position: relative;
   gap: 12px;
 }
 
 .button_delete {
   transform: rotate(45deg);
+}
+
+.disabled {
+  background-color: #F4F4F4;
 }

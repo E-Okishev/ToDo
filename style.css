@@ -35,7 +35,6 @@ h2 {
   min-height: 45px;
   border-radius: 6px;
   border: 1px solid #989898;
-  background: #fff;
   font-size: 18px;
   padding: 12px 45px 12px 12px;
   margin-bottom: 8px;
@@ -47,6 +46,10 @@ h2 {
 
 .button {
   background: none;
+  background-image: url(./img/close.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
   border: none;
   top: calc(50% - (50% - 12px));
   right: 13px;
@@ -66,5 +69,5 @@ h2 {
 }
 
 .disabled {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }

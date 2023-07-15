@@ -15,105 +15,41 @@
 <body>
   <section>
     <div class="todo_list">
+
       <div>
         <h2>HIGH</h2>
+
         <div class="todo_list__add_task">
-          <input class="input" type="text" name="add_task" id="add_task" placeholder="Добавить важных дел">
-          <button type="button" class="button button_add">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                stroke="#998899" />
-              <line y1="-0.5" x2="18.0401" y2="-0.5"
-                transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-            </svg>
-          </button>
+          <form action="index.html">
+            <input class="input add_high" type="text" name="add_task" id="add_task" placeholder="Добавить важных дел">
+            <input type="submit" class="button button_add" value="">
+          </form>
         </div>
+
         <div class="task_list">
-          <div class="input task">
-            <input class="checkbox" type="checkbox" name="elem" id="1">
-            <p>Вот вам и супер интересная тема. Вы наверняка заметили что ваши файлы с кодом становятся все объемнее,
-              что
-              хочется вынести некоторые вещи куда-то за пределы основной программы.</p>
-            <button type="button" class="button button_delete">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                  stroke="#998899" />
-                <line y1="-0.5" x2="18.0401" y2="-0.5"
-                  transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-              </svg>
-            </button>
-          </div>
-          <div class="input task">
-            <input class="checkbox" type="checkbox" name="elem" id="1">
-            <p>Начать делать задачу</p>
-            <button type="button" class="button button_delete">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                  stroke="#998899" />
-                <line y1="-0.5" x2="18.0401" y2="-0.5"
-                  transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-              </svg>
-            </button>
-          </div>
-          <div class="input task">
-            <input class="checkbox" type="checkbox" name="elem" id="2" checked>
-            <p>Сверстать этот TODO list</p>
-            <button type="button" class="button button_delete">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                  stroke="#998899" />
-                <line y1="-0.5" x2="18.0401" y2="-0.5"
-                  transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-              </svg>
-            </button>
-          </div>
+
         </div>
       </div>
+
       <div>
         <h2>LOW</h2>
+
         <div class="todo_list__add_task">
-          <input class="input" type="text" name="add_task" id="add_task" placeholder="Добавить важных дел">
-          <button type="button" class="button button_add">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                stroke="#998899" />
-              <line y1="-0.5" x2="18.0401" y2="-0.5"
-                transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-            </svg>
-          </button>
+          <form action="index.html">
+            <input class="input add_low" type="text" name="add_task" id="add_task" placeholder="Добавить важных дел">
+            <input type="submit" class="button button_add" value="">
+          </form>
         </div>
+
+
         <div class="task_list">
-          <div class="input task">
-            <input class="checkbox" type="checkbox" name="elem" id="1">
-            <p>Начать делать задачу</p>
-            <button type="button" class="button button_delete">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                  stroke="#998899" />
-                <line y1="-0.5" x2="18.0401" y2="-0.5"
-                  transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-              </svg>
-            </button>
-          </div>
-          <div class="input task disabled">
-            <input class="checkbox" type="checkbox" name="elem" id="2" checked>
-            <p>Сверстать этот TODO list</p>
-            <button type="button" class="button button_delete">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <line y1="-0.5" x2="18.0096" y2="-0.5" transform="matrix(0.999988 -0.00481873 0.0748716 0.997193 1 10)"
-                  stroke="#998899" />
-                <line y1="-0.5" x2="18.0401" y2="-0.5"
-                  transform="matrix(-0.0192905 -0.999814 0.998699 0.0509976 10.5404 18.8444)" stroke="#998899" />
-              </svg>
-            </button>
-          </div>
+
         </div>
       </div>
-    </div>
     </div>
   </section>
 
-
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>

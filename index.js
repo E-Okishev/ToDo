@@ -1,25 +1,24 @@
-import { addHigh, taskListHigh, errorText, addHighTaskBlock, buttonAddHigh } from "./modules/consts.js";
-import { addLowTaskBlock, addLow, buttonAddLow, taskListLow } from "./modules/consts.js";
+import { addHigh, taskListHigh, addHighTaskBlock, buttonAddHigh, errorText } from "./modules/consts.js";
+import { addLow, taskListLow, addLowTaskBlock, buttonAddLow } from "./modules/consts.js";
 
-let i = 0;
 buttonAddHigh.addEventListener('click', function (evt) {
-  const newTask = document.createElement('div');
   evt.preventDefault()
+
+  const newTask = document.createElement('div');
+  console.log(buttonAddHigh.parentNode.id); //high
 
   if (addHigh.value) {
     errorText.remove();
-    newTask.setAttribute("id", `${i}`)
     newTask.innerHTML =
       `
-      <div class="input task" id='${i}'>
-      <input class="checkbox" type="checkbox" name="elem" id='${i}'>
+      <div class="input task">
+      <input class="checkbox" type="checkbox" name="elem">
       <p>${addHigh.value}</p>
-      <input type="submit" class="button button_delete" id='${i}' value="">
+      <input type="submit" class="button button_delete" value="">
       </div>
       `
     taskListHigh.appendChild(newTask);
     addHigh.value = '';
-    i++
 
     const buttonDelete = newTask.querySelector('.button_delete')
     buttonDelete.addEventListener('click', function () {
@@ -38,23 +37,22 @@ buttonAddHigh.addEventListener('click', function (evt) {
 })
 
 buttonAddLow.addEventListener('click', function (evt) {
-  const newTask = document.createElement('div');
   evt.preventDefault()
 
+  const newTask = document.createElement('div');
+  console.log(buttonAddLow.parentNode.id);
   if (addLow.value) {
     errorText.remove();
-    newTask.setAttribute("id", `${i}`)
     newTask.innerHTML =
       `
-      <div class="input task" id='${i}'>
-      <input class="checkbox" type="checkbox" name="elem" id='${i}'>
+      <div class="input task">
+      <input class="checkbox" type="checkbox" name="elem">
       <p>${addLow.value}</p>
-      <input type="submit" class="button button_delete" id='${i}' value="">
+      <input type="submit" class="button button_delete" value="">
       </div>
       `
     taskListLow.appendChild(newTask);
     addLow.value = '';
-    i++
 
     const buttonDelete = newTask.querySelector('.button_delete')
     buttonDelete.addEventListener('click', function () {

@@ -1,7 +1,7 @@
 import { addHigh, taskListHigh, addHighTaskBlock, buttonAddHigh, errorText } from "./modules/consts.js";
 import { addLow, taskListLow, addLowTaskBlock, buttonAddLow } from "./modules/consts.js";
 
-buttonAddHigh.addEventListener('click', function (evt) {
+buttonAddHigh.addEventListener('click', (evt) => {
   evt.preventDefault()
 
   const newTask = document.createElement('div');
@@ -21,7 +21,7 @@ buttonAddHigh.addEventListener('click', function (evt) {
     addHigh.value = '';
 
     const buttonDelete = newTask.querySelector('.button_delete')
-    buttonDelete.addEventListener('click', function () {
+    buttonDelete.addEventListener('click', () => {
       newTask.remove()
     })
   } else {
@@ -31,12 +31,12 @@ buttonAddHigh.addEventListener('click', function (evt) {
   }
 
   const checkbox = newTask.querySelector('.checkbox');
-  checkbox.addEventListener('click', function () {
+  checkbox.addEventListener('click', () => {
     newTask.classList.toggle('disabled')
   })
 })
 
-buttonAddLow.addEventListener('click', function (evt) {
+buttonAddLow.addEventListener('click', (evt) => {
   evt.preventDefault()
 
   const newTask = document.createElement('div');
@@ -55,7 +55,7 @@ buttonAddLow.addEventListener('click', function (evt) {
     addLow.value = '';
 
     const buttonDelete = newTask.querySelector('.button_delete')
-    buttonDelete.addEventListener('click', function () {
+    buttonDelete.addEventListener('click', () => {
       newTask.remove()
     })
   } else {
@@ -65,7 +65,7 @@ buttonAddLow.addEventListener('click', function (evt) {
   }
 
   const checkbox = newTask.querySelector('.checkbox');
-  checkbox.addEventListener('click', function () {
+  checkbox.addEventListener('click', () => {
     newTask.classList.toggle('disabled')
   })
 })
